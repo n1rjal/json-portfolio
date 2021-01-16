@@ -1,0 +1,72 @@
+.Contact__Conatiner {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+}
+
+form h2,
+.dots {
+  animation: fadeInFromLeft 600ms ease-in-out normal;
+}
+
+svg {
+  font-size: xx-large;
+  padding: 0 3px;
+}
+
+form .form-control {
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  margin: 4px 0;
+  height: 2rem;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  animation: popInFromLeft 500ms normal;
+}
+
+.form-control-textarea {
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  animation: popInFromLeft 600ms normal;
+}
+
+.form-control-textarea > textarea {
+  padding: 3px;
+  border-radius: 4px;
+  border: none;
+  outline: 0;
+}
+
+.form-control > input {
+  border: none;
+  width: 10cm;
+  border-color: transparent;
+  outline: 0;
+}
+
+.form-control > input[type="submit"] {
+  width: 3cm;
+  padding: 0;
+  border: 1px solid;
+}
+
+@media only screen and (max-width: 550px) {
+  .Contact__Conatiner {
+    padding: 20px 0;
+  }
+  .form-control > input {
+    width: 50vw;
+  }
+}

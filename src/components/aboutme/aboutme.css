@@ -1,0 +1,119 @@
+.aboutMeContainer {
+  padding: 10px 100px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  overflow-y: auto;
+  z-index: 1;
+  height: fit-content;
+}
+
+.aboutMeContainer > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.placeholderImage {
+  margin: 0 10px;
+  z-index: 3;
+}
+
+.dots {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 5px 2px;
+  display: inline-block;
+}
+
+.content::first-letter {
+  margin-left: 1cm;
+}
+
+.aboutMeSection p h2 {
+  font-size: 25px;
+}
+
+.aboutMeSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+.aboutMeSection :nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.aboutMeContainer > div {
+  z-index: 3;
+}
+
+.aboutMeContainer > div:nth-child(odd) {
+  flex-direction: row-reverse;
+  animation: popInFromLeft 600ms ease-in-out normal;
+}
+
+.aboutMeContainer > div:nth-child(even) {
+  animation: popInFromRight 600ms ease-in-out normal;
+  /* max-width: 700px; */
+  z-index: 3;
+}
+
+.irregularShape {
+  width: 300px;
+  display: block;
+  position: absolute;
+  height: 300px;
+  z-index: 1;
+}
+.content {
+  z-index: 4;
+}
+
+.irregularShape3 {
+  left: 39%;
+  top: 42%;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  border-radius: 32% 68% 35% 64% / 36% 24% 76% 34%;
+}
+
+.irregularShape4 {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  border-radius: 62% 38% 70% 30% / 42% 47% 53% 58%;
+  top: 50%;
+  left: 10%;
+}
+
+@media only screen and (max-width: 650px) {
+  form {
+    padding: 2cm 10px;
+  }
+  .aboutMeContainer {
+    all: none;
+    padding: 1.5cm 10px;
+    display: block;
+    flex-direction: column;
+  }
+  .aboutMeSection {
+    all: none;
+    margin: 1cm 0;
+    flex-direction: column;
+  }
+  .aboutMeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+
+  .aboutMeSection :nth-child(even) {
+    flex-direction: column;
+  }
+
+  .aboutMeContainer > div:nth-child(odd) {
+    text-align: left;
+    flex-direction: column;
+    animation: popInFromLeft 600ms ease-in-out normal;
+  }
+}
