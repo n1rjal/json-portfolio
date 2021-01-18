@@ -1,0 +1,68 @@
+{
+  "name": "Nirjal Paudel",
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "github": "",
+    "gmail": "",
+    "telephone": ""
+  },
+  "home": {
+    "avatar": "",
+    "greet": "Hi,",
+    "greetHighLight": "Mate",
+    "message": "My name is Nirjal Paudel. I am ",
+    "I-AM": ["Freelancer", "Student", "Hard Worker"]
+  },
+  "projects": [
+    {
+      "name": "HamroBakas",
+      "desp": "An eCommerce solution build using djago and python. It is hosted online using apache",
+      "techs": [
+        "Python",
+        "Django",
+        "Git",
+        "REST",
+        "API",
+        "Authenentication",
+        "Database"
+      ],
+      "githubURL": "",
+      "liveURL": "http://hamrobakas.com/"
+    },
+    {
+      "name": "Netflix Clone",
+      "desp": "A clone of website i.e. Netflix. It links REST API of TMDB API. TMDB API is a great API for accessing movie database, trailer, etc",
+      "techs": ["ReactJS", "Git", "REST", "API Linking"],
+      "githubURL": "https://github.com/n1rjal/netflix-clone",
+      "liveURL": "https://netflix-clone-n1.netlify.app/"
+    },
+    {
+      "name": "Tarkari APP",
+      "desp": "An e-commerce based site for vegetables. This could solve many problems in lock down and quarantine.",
+      "techs": ["Python", "Django", "Git", "REST", "Authentication"],
+      "githubURL": "",
+      "liveURL": "http://tarkariapp.herokuapp.com/"
+    },
+    {
+      "name": "SmartAgro",
+      "desp": "Here we propose a smart way to tackle the food crisis by increasing the crops production rate, ensuring proper health of crops, market value and demand of the crops and plantation of the specific crop in response to the AI predicted.",
+      "techs": ["API", "Django", "Database", "RandomForest", "SkLearn"],
+      "githubURL": "https://github.com/n1rjal/Fsociety-SpaceApp",
+      "liveURL": "http://fsocietyspaceapp.herokuapp.com/"
+    },
+    {
+      "name": "Portfolio - JSON based",
+      "desp": "In this react based app, I have made a protfolio that gets all it's content from a JSON file. A JSON file with practical details like name, projects build,socials, etc. This very website is built using this ReactJS app",
+      "techs": ["ReactJS", "Git", "REST", "API Linking", "Context API"],
+      "githubURL": "https://github.com/n1rjal/json-portfolio",
+      "liveURL": "https://nirjal.netlify.app/"
+    }
+  ],
+  "about-me": [
+    { "Q": "", "A": "" },
+    { "Q": "", "A": "" },
+    { "Q": "", "A": "" },
+    { "Q": "", "A": "" }
+  ]
+}
