@@ -18,7 +18,9 @@ const Projects = () => {
 
                 <div className="techUsed">
                   {project.techs.map((tech) => (
-                    <span className="techName">{tech}</span>
+                    <span className="techName" key={tech}>
+                      {tech}
+                    </span>
                   ))}
                 </div>
                 <div className="dots"></div>

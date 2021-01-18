@@ -1,18 +1,18 @@
 {
   "name": "Nirjal Paudel",
   "social": {
-    "facebook": "",
-    "instagram": "",
-    "github": "",
-    "gmail": "",
+    "facebook": "https://www.facebook.com/n1rjal",
+    "instagram": "https://www.instagram.com/n1_rjal",
+    "github": "https://github.com/n1rjal",
+    "gmail": "mailto:nirjalpaudel54312@gmail.com",
     "telephone": ""
   },
   "home": {
-    "avatar": "",
-    "greet": "Hi,",
+    "avatar": "https://avatars2.githubusercontent.com/u/60036262?v=4",
+    "greet": "Hi",
     "greetHighLight": "Mate",
     "message": "My name is Nirjal Paudel. I am ",
-    "I-AM": ["Freelancer", "Student", "Hard Worker"]
+    "IAM": ["Freelancer", "Student", "Hard Worker"]
   },
   "projects": [
     {
