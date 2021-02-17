@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
+import emailjs from "emailjs-com";
 import "./contact.css";
 
 const Contact = () => {
@@ -10,9 +11,28 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   document.title = "Nirjal's Portfolio | Contact";
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_tv4cqt8",
+        "template_o5c0txg",
+        e.target,
+        "user_J0F3xmqTMFQ9dA1jaRsGg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="Contact__Conatiner">
-      <form>
+      <form onSubmit={onSubmit}>
         <h2>Contact Form</h2>
         <div>
           <div className="dots"></div>
@@ -27,7 +47,7 @@ const Contact = () => {
             type="text"
             className="form__nameInput"
             placeholder="Enter your Name"
-            name="name"
+            name="from_name"
             value={name}
             onChange={(e) => setName(e.value)}
           />
@@ -48,8 +68,8 @@ const Contact = () => {
           <input
             type="email"
             placeholder="Enter your Email"
-            name="phone"
-            className="form__phoneInput"
+            name="email"
+            className="form__emailInput"
             value={email}
             onChange={(e) => setEmail(e.value)}
           />

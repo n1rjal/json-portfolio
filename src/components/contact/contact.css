@@ -60,6 +60,7 @@ form .form-control {
   width: 3cm;
   padding: 0;
   border: 1px solid;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 550px) {
