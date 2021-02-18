@@ -9,6 +9,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [answer, setAnswer] = useState("");
   document.title = "Nirjal's Portfolio | Contact";
 
   const onSubmit = (e) => {
@@ -23,6 +24,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
+          setAnswer("Your Mail is sent");
         },
         (error) => {
           console.log(error.text);
@@ -41,6 +44,7 @@ const Contact = () => {
           <div className="dots"></div>
           <div className="dots"></div>
         </div>
+        <div className="form-control">{answer && <p>{answer}</p>}</div>
         <div className="form-control">
           <CgProfile />
           <input
