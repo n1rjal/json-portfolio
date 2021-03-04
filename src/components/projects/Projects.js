@@ -12,8 +12,8 @@ const Projects = () => {
   return (
     <div className="projectContainer">
       <div className="projects">
-        {data.projects.map((project) => (
-          <div className="project">
+        {data.projects.map((project, arrayIndex) => (
+          <div key={arrayIndex} className="project">
             <h3 className="projectName">{project.name}</h3>
             <div className="techUsed">
               {project.techs.map((tech) => (
