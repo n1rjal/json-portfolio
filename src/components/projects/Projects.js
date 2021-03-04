@@ -4,6 +4,7 @@ import DataContext from "../../context/datacontext";
 import { GoGlobe } from "react-icons/go";
 import { AiFillGithub } from "react-icons/ai";
 import { GiCrossMark } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   document.title = "Nirjal's Portfolio | Projects";
@@ -15,7 +16,6 @@ const Projects = () => {
             return data.projects.map((project) => (
               <div className="project">
                 <h3 className="projectName">{project.name}</h3>
-
                 <div className="techUsed">
                   {project.techs.map((tech) => (
                     <span className="techName" key={tech}>
@@ -31,34 +31,30 @@ const Projects = () => {
                 <br />
                 <p className="projectDescription">{project.desp}</p>
                 <p className="projectLinks">
-                  {project.githubURL ? (
-                    <a
+                  {project.liveURL ? (
+                    <Link
                       target="_blank"
                       rel="noreferrer"
-                      href={project.githubURL}
+                      to={{ pathname: project.liveURL }}
                     >
                       <GoGlobe className="web" />
-                      Github URL
-                    </a>
+                      Live URL
+                    </Link>
                   ) : (
                     <p className="noURL">
                       <GiCrossMark className="crossmark" /> No Github URL
                     </p>
                   )}
                   <br />
-                  {project.liveURL ? (
-                    <a
+                  {project.githubURL && (
+                    <Link
                       target="_blank"
                       rel="noreferrer"
-                      href={project.githubURL}
+                      to={{ pathname: project.githubURL }}
                     >
                       <AiFillGithub className="github" />
-                      Live URL
-                    </a>
-                  ) : (
-                    <p className="noURL">
-                      <GiCrossMark /> No Github URL
-                    </p>
+                      Github URL
+                    </Link>
                   )}
                 </p>
               </div>
