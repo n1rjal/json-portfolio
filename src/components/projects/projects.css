@@ -2,13 +2,14 @@
   padding: 0 100px;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   overflow-y: auto;
+  height: 101vh;
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  overflow-y: visible;
+  margin: 1cm 0;
+  animation: flipIn 800ms ease-in-out normal;
+  border-radius: 5px;
+  padding: 1cm;
 }
 
 .projectLinks {
@@ -27,19 +28,22 @@
 }
 
 .project {
+  max-width: clamp(300px, 800px, 800px);
+  margin: auto;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 200px auto 120px;
   position: relative;
-  width: 300px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.555) 0px 0px 15px;
-  animation: flipIn 800ms ease-in-out normal;
+  padding: 15px 10px;
+  border-bottom: 1px solid black;
 }
+
 .projectName {
+  padding: 10px;
   text-transform: uppercase;
   font-size: 20px;
-  color: rgb(255, 189, 66);
+  margin: 10px 0;
+  color: rgb(13, 11, 53);
 }
 
 .techName {
@@ -56,11 +60,29 @@
   text-indent: 20px;
 }
 
+.projectImage {
+  width: 500px;
+  height: auto;
+}
+
+.ProjectPopupContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.right {
+  padding: 10px;
+}
+
 .noURL {
   font-size: 0.8rem;
 }
 .noURL .crossmark {
   font-size: large;
+}
+
+.projectTechs {
+  margin: 10px 0;
 }
 
 @keyframes flipIn {
@@ -76,9 +98,28 @@
   .projectContainer {
     padding: 2rem 0;
   }
+
+  .projectImage {
+    width: 200px;
+    height: auto;
+  }
+
+  .ProjectPopupContainer {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .project {
+    grid-template-columns: auto;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .right {
+    padding: 2px;
+  }
+
   .projects {
     margin: 1rem 0;
     display: flex;
@@ -86,6 +127,20 @@
   }
   .projectContainer {
     padding: 3rem 0;
+  }
+
+  .projects {
+    display: block;
+  }
+
+  .projectImage {
+    width: 200px;
+    height: auto;
+  }
+
+  .ProjectPopupContainer {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 

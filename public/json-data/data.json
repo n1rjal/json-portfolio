@@ -1,4 +1,5 @@
 {
+  "luckyNumber": 7,
   "name": "N1",
   "social": {
     "facebook": "https://www.facebook.com/n1rjal",
@@ -11,13 +12,13 @@
     "avatar": "https://avatars2.githubusercontent.com/u/60036262?v=4",
     "greet": "Hi",
     "greetHighLight": "Mate",
-    "message": "My name is Nirjal Paudel. I Love ",
+    "message": "My name is Nirjal Paudel. I love ",
     "IAM": ["Python", "Database", "Javascript"]
   },
   "projects": [
     {
       "name": "HamroBakas",
-      "desp": "An eCommerce solution build using djago and python. It is hosted online using apache",
+      "desp": "An eCommerce solution build using django and python. It is hosted online using apache",
       "techs": [
         "Python",
         "Django",
@@ -57,6 +58,13 @@
       "techs": ["ReactJS", "Git", "REST", "API Linking", "Context API"],
       "githubURL": "https://github.com/n1rjal/json-portfolio",
       "liveURL": "https://nirjal.netlify.app/"
+    },
+    {
+      "name": "Kamao Nepal",
+      "desp": "Kamao Nepal is a REST API for tiktok alike application. I used Nodejs for kamao. It serves static files from AWS or Local depending upon the current file location. It is probably the most secure backend that I have build. Unit Testing, End to End tetsing were performed. Follows MVC pattern",
+      "techs": ["NodeJS", "Git", "Streams", "MVC", "REST", "AWS"],
+      "githubURL": "",
+      "liveURL": ""
     }
   ],
   "about-me": [

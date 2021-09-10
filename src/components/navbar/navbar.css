@@ -6,7 +6,7 @@ nav {
   grid-template-columns: auto auto;
   justify-content: space-around;
   padding: 20px 0;
-  z-index: 9999;
+  z-index: 9;
   align-items: center;
   background-color: #fff;
 }
@@ -25,7 +25,8 @@ nav {
   color: black;
   animation: popInFromRight 600ms ease-in-out normal;
   text-transform: uppercase;
-  margin: 0 5px;
+  font-size: 18px;
+  margin: 0 10px;
 }
 
 .NavLink.active {
@@ -172,6 +173,7 @@ nav {
 
   .burgerContainer {
     display: block;
+    margin-right: 20px;
   }
 
   .burger {

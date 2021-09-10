@@ -1,5 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Loading from "../components/loading/Loading";
 
-const DataContext = React.createContext({});
+export const DataContext = React.createContext({});
 
-export default DataContext;
+export const DataContextProvider = (props) => {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    fetch("/json-data/data.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+  return (
+    <>
+      {data.luckyNumber ? (
+        <DataContext.Provider value={data}>
+          {props.children}
+        </DataContext.Provider>
+      ) : (
+        <Loading></Loading>
+      )}
+    </>
+  );
+};

@@ -16,3 +16,11 @@ a {
   text-decoration: none;
   font-size: 18px;
 }
+
+#portal-root {
+  display: block;
+  position: fixed;
+  left: 0cm;
+  top: 0cm;
+  z-index: 100;
+}
