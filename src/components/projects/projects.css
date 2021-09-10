@@ -32,17 +32,33 @@
   margin: auto;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   display: grid;
+  align-items: center;
   grid-template-columns: 200px auto 120px;
   position: relative;
-  padding: 15px 10px;
+  padding: 10px 10px;
   border-bottom: 1px solid black;
 }
 
-.projectName {
+.links {
+  margin: 20px 0;
+}
+
+.link {
+  color: teal;
+  text-decoration: underline;
+}
+
+h1.projectName {
   padding: 10px;
   text-transform: uppercase;
   font-size: 20px;
   margin: 10px 0;
+  color: rgb(13, 11, 53);
+}
+
+h2.projectName {
+  text-transform: uppercase;
+  font-size: 20px;
   color: rgb(13, 11, 53);
 }
 
@@ -61,12 +77,32 @@
 }
 
 .projectImage {
+  display: none;
   width: 500px;
   height: auto;
 }
 
+.projectImage.show {
+  display: block;
+  animation: fade 1.3s forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translate(-10px -10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
 .ProjectPopupContainer {
   display: grid;
+  height: 100%;
+  align-items: center;
   grid-template-columns: auto auto;
 }
 

@@ -1,0 +1,31 @@
+.sliderContainer {
+  display: block;
+  position: relative;
+}
+
+.direct {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  outline: none;
+  border: 0px;
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  translate: transform(0px, -50%);
+  z-index: 100;
+  display: none;
+}
+
+.direct.btn-left {
+  left: 10px;
+}
+
+.direct.btn-right {
+  right: 10px;
+}
+
+.sliderContainer:hover > .direct {
+  display: block;
+}

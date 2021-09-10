@@ -29,42 +29,48 @@
         "Database"
       ],
       "githubURL": "",
-      "liveURL": "http://hamrobakas.com/"
+      "liveURL": "http://hamrobakas.com/",
+      "images": []
     },
     {
       "name": "Netflix Clone",
       "desp": "A clone of website i.e. Netflix. It links REST API of TMDB API. TMDB API is a great API for accessing movie database, trailer, etc",
       "techs": ["ReactJS", "Git", "REST", "API Linking"],
       "githubURL": "https://github.com/n1rjal/netflix-clone",
-      "liveURL": "https://netflix-clone-n1.netlify.app/"
+      "liveURL": "https://netflix-clone-n1.netlify.app/",
+      "images": ["1.png", "2.png", "3.png", "4.png"]
     },
     {
-      "name": "Tarkari APP",
+      "name": "Tarkari App",
       "desp": "An e-commerce based site for vegetables. This could solve many problems in lock down and quarantine.",
       "techs": ["Python", "Django", "Git", "REST", "Authentication"],
       "githubURL": "",
-      "liveURL": "http://tarkariapp.herokuapp.com/"
+      "liveURL": "http://tarkariapp.herokuapp.com/",
+      "images": ["1.png", "2.png", "3.png"]
     },
     {
       "name": "SmartAgro",
       "desp": "Here we propose a smart way to tackle the food crisis by increasing the crops production rate, ensuring proper health of crops, market value and demand of the crops and plantation of the specific crop in response to the AI predicted.",
       "techs": ["API", "Django", "Database", "RandomForest", "SkLearn"],
       "githubURL": "https://github.com/n1rjal/Fsociety-SpaceApp",
-      "liveURL": "http://fsocietyspaceapp.herokuapp.com/"
+      "liveURL": "http://fsocietyspaceapp.herokuapp.com/",
+      "images": ["1.png", "2.png", "3.png"]
     },
     {
       "name": "Portfolio - JSON based",
       "desp": "In this react based app, I have made a protfolio that gets all it's content from a JSON file. A JSON file with practical details like name, projects build,socials, etc. This very website is built using this ReactJS app",
       "techs": ["ReactJS", "Git", "REST", "API Linking", "Context API"],
       "githubURL": "https://github.com/n1rjal/json-portfolio",
-      "liveURL": "https://nirjal.netlify.app/"
+      "liveURL": "https://nirjal.netlify.app/",
+      "images": []
     },
     {
       "name": "Kamao Nepal",
       "desp": "Kamao Nepal is a REST API for tiktok alike application. I used Nodejs for kamao. It serves static files from AWS or Local depending upon the current file location. It is probably the most secure backend that I have build. Unit Testing, End to End tetsing were performed. Follows MVC pattern",
       "techs": ["NodeJS", "Git", "Streams", "MVC", "REST", "AWS"],
       "githubURL": "",
-      "liveURL": ""
+      "liveURL": "",
+      "images": []
     }
   ],
   "about-me": [
