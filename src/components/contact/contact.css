@@ -1,5 +1,4 @@
 .Contact__Conatiner {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   padding: 30px;
 }
 
@@ -70,4 +69,13 @@ form .form-control {
   .form-control > input {
     width: 50vw;
   }
+}
+
+.recaptcha {
+  z-index: 10;
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px black;
+  padding: 5px;
+  width: fit-content;
+  margin: 5px 0;
 }

@@ -4,7 +4,6 @@
   justify-content: space-evenly;
   align-items: center;
   grid-template-rows: 89vh 0;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .main::after {
@@ -63,6 +62,19 @@
 
 .socials {
   animation: fadeInFromLeft 600ms ease-in-out normal;
+}
+
+.gridElement2 {
+  position: relative;
+}
+
+@keyframes rotateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .profilePhoto {

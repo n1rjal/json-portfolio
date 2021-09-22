@@ -6,6 +6,7 @@ import AboutMe from "./components/aboutme/AboutMe";
 import Contact from "./components/contact/Contact";
 
 import { DataContextProvider } from "./context/datacontext";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
         <header className="App-header">
           <Router>
             <NavBar />
-
             <Switch>
               <Route exact path="/">
                 <Main />
@@ -33,6 +33,7 @@ function App() {
               </Route>
             </Switch>
           </Router>
+          <Portfolio />
         </header>
       </div>
     </DataContextProvider>

@@ -1,6 +1,5 @@
 .projectContainer {
   padding: 0 100px;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   overflow-y: auto;
   height: 101vh;
 }

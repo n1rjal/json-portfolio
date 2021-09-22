@@ -1,6 +1,5 @@
 .aboutMeContainer {
   padding: 10px 100px;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   overflow-y: auto;
   z-index: 1;
   height: fit-content;

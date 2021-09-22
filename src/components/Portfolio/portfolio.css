@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.portfolio {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  border-color: orange;
+  padding: 10px;
+  width: 300px;
+  z-index: 8;
+  font-family: "Bebas Neue", cursive;
+  border-left: 5px solid;
+  background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.portfolio:hover {
+  transition: 1s;
+  background-position: left;
+}
+
+.PDF {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .portfolio {
+    width: 100vw;
+    left: 0px;
+    transform: translate(0, 0);
+    background-color: white;
+    bottom: 0;
+  }
+}
