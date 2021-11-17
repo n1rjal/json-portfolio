@@ -71,6 +71,14 @@
       "githubURL": "",
       "liveURL": "",
       "images": []
+    },
+    {
+      "name": "Lancemeup Chat",
+      "desp": "Lancemeup chat is an internal chat system built using TYPEORM and NESTJS. It use websockets for duplex communication.",
+      "techs": ["NestJS", "Express", "Git", "WebSockets", "MVC", "REST", "AWS"],
+      "githubURL": "",
+      "liveURL": "",
+      "images": []
     }
   ],
   "about-me": [
