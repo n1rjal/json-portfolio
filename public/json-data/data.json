@@ -75,7 +75,15 @@
     {
       "name": "Lancemeup Chat",
       "desp": "Lancemeup chat is an internal chat system built using TYPEORM and NESTJS. It use websockets for duplex communication.",
-      "techs": ["NestJS", "Express", "Git", "WebSockets", "MVC", "REST", "AWS"],
+      "techs": ["NestJS", "Express", "Git", "WebSockets", "REST", "AWS"],
+      "githubURL": "",
+      "liveURL": "",
+      "images": []
+    },
+    {
+      "name": "Nirman Solution",
+      "desp": "Nirman solution is an ecommerce platform built using TYPEORM and NESTJS. It use redis as caching provider and implments cache wirte through policy",
+      "techs": ["NestJS", "Express", "Git", "Typeorm", "redis", "REST", "AWS"],
       "githubURL": "",
       "liveURL": "",
       "images": []
