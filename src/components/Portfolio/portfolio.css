@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .portfolio {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   display: flex;

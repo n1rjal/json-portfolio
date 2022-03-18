@@ -17,21 +17,23 @@
   },
   "projects": [
     {
-      "name": "HamroBakas",
-      "desp": "An eCommerce solution build using django and python. It is hosted online using apache",
+      "name": "Hifoods",
+      "desp": "Hifoods is a multivendor resturant service. It is made using nestjs. It implements caching and queue processing with redis. It also uses amazon s3 for image storage. It also implements sharp for image compression, TWOLIO for SMS and email notification. It implments HTTP2 and uses helmet for security. It also uses AWS for cloud storage and google for google map api. It also uses stripe for payment gateway. It does implment real time communication using sockets.io",
       "techs": [
-        "Python",
-        "Django",
+        "NestJS",
+        "Express",
         "Git",
+        "Typeorm",
+        "redis",
         "REST",
-        "API",
-        "Authenentication",
-        "Database"
+        "AWS",
+        "HTTP2"
       ],
       "githubURL": "",
-      "liveURL": "http://hamrobakas.com/",
-      "images": []
+      "liveURL": "http://hifoods.fr/",
+      "images": ["1.png", "2.png", "3.png"]
     },
+
     {
       "name": "Netflix Clone",
       "desp": "A clone of website i.e. Netflix. It links REST API of TMDB API. TMDB API is a great API for accessing movie database, trailer, etc",
@@ -73,19 +75,19 @@
       "images": []
     },
     {
-      "name": "Lancemeup Chat",
-      "desp": "Lancemeup chat is an internal chat system built using TYPEORM and NESTJS. It use websockets for duplex communication.",
-      "techs": ["NestJS", "Express", "Git", "WebSockets", "REST", "AWS"],
-      "githubURL": "",
-      "liveURL": "",
-      "images": []
-    },
-    {
       "name": "Nirman Solution",
       "desp": "Nirman solution is an ecommerce platform built using TYPEORM and NESTJS. It use redis as caching provider and implments cache wirte through policy",
-      "techs": ["NestJS", "Express", "Git", "Typeorm", "redis", "REST", "AWS"],
+      "techs": [
+        "NestJS",
+        "Express",
+        "Git",
+        "Typeorm",
+        "redis",
+        "REST",
+        "Digital Ocean"
+      ],
       "githubURL": "",
-      "liveURL": "",
+      "liveURL": "http://nirmansolution.com/",
       "images": []
     }
   ],
